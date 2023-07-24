@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Home</h1>
+    <script src="sweet-cookies.min.js"></script>
+    <script>
+        const logoutChannel = new BroadcastChannel("logout-channel")  
+        logoutChannel.addEventListener('message', (e)=>{
+            console.log(e.data);
+        })
+    </script>
+
+</body>
+
+</html>
